@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alteração</title>
+</head>
+<body>
+    <h1>Alteração de Produto</h1>
+    <form id="lojaEdicao">
+        <div id="infos">
+            <label for="altCodigo">Código: </label>
+            <input type="text" id="altCodigo" readonly>
+
+            <label for="altProduto">Produto: </label>
+            <input type="text" id="altProduto">
+
+            <label for="altDescricao">Descrição: </label>
+            <input type="text" id="altDescricao">
+
+            <label for="altPreco">Preço: R$ </label>
+            <input type="text" id="altPreco">
+
+            <label for="altFoto">Foto: </label>
+            <input type="text" id="altFoto" maxlength="10">
+
+            <div id="imagem">
+                <img id="altFotoProduto" src="" alt="Foto do produto" style="display: none;">
+            </div><br>
+
+            <button type="submit">Salvar alterações</button>
+            <button type="reset" id="reset">Cancelar</button>
+        </div>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e4fff8;
+    color: rgb(126, 98, 98);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 700px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+form {
+    background: #fff0db;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
+    width: 100%;
+    max-width: 700px;
+}
+
+form, #infos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#infos {
+    width: 100%;
+}
+
+label {
+    width: 100%;
+    font-weight: 600;
+    color: #000000;
+    margin: 14px 0 5px 0;
+}
+
+label:first-child {
+    margin-top: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+input[type="text"]:focus {
+    border-color: #27ae60;
+}
+
+input[readonly] {
+    background-color: #eef3f5;
+    color: #555555;
+}
+
+#imagem {
+    width: 100%;
+}
+
+#fotoProduto, #altFotoProduto, #excFoto {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px dashed #000000;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+#imagem img {
+    margin-top: 14px;
+}
+
+
+#exclusao {
+    background: #b1e9fa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#exclusao p {
+    color: #000000;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button, #infos button {
+    margin: 22px 10px 0 0;
+}
+
+button[type="submit"] {
+    background-color: #d4fff3;
+    color: #000000;
+}
+
+button[type="submit"]:hover {
+    background-color: #00ffbb;
+}
+
+button[type="reset"], #btnCancelar {
+    background-color: #95a5a6;
+    color: white;
+}
+
+button[type="reset"]:hover, #Cancelar:hover {
+    background-color: #7f8c8d;
+}
+
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #c0ffff;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #000000;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td button {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin: 0 5px 0 0;
+    color: white;
+}
+
+td button:nth-of-type(1) {
+    background-color: #2980b9;
+}
+
+td button:nth-of-type(1):hover {
+    background-color: #1f6391;
+}
+
+td button:nth-of-type(2) {
+    background-color: #c0392b;
+}
+
+td button:nth-of-type(2):hover {
+    background-color: #922b21;
+}
