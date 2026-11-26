@@ -242,7 +242,7 @@ if (lojaEdicao) {
 
             salvarRegistros(registros);
             alert('Produto alterado com sucesso!');
-            window.location.href = 'cadastro.html';
+            window.location.href = 'index.html';
         });
 
         const btnResetAlt = document.getElementById('reset');
@@ -250,7 +250,7 @@ if (lojaEdicao) {
             btnResetAlt.addEventListener('click', function (e) {
                 e.preventDefault();
                 alert('Alteração cancelada!');
-                window.location.href = 'cadastro.html';
+                window.location.href = 'index.html';
             });
         }
     }
@@ -288,7 +288,7 @@ if (Exclusao) {
                 registros.splice(index, 1);
                 salvarRegistros(registros);
             }
-            window.location.href = 'cadastro.html';
+            window.location.href = 'index.html';
         }, 150);
     }
 }
